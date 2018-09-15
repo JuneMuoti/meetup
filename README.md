@@ -6,7 +6,7 @@ An app that uses the Meetup API  to display the list of events happening in your
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
@@ -36,7 +36,8 @@ run python3.6 manage.py runserver to run app on local server
 
 * Django - The web framework used
 * Python -Programming Language
-*Meetup API
+* Meetup API
+
 
 
 ## Authors
