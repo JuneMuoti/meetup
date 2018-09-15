@@ -1,0 +1,11 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- <p>The upcoming event is {{name}} and it is on {{local_date}} at {{venue_name}}</p> -->
+{% for item in info.events %}
+
+        <p >{{item.link}}</p>
+{% endfor %}
+{% endblock %}
