@@ -37,6 +37,8 @@ run python3.6 manage.py runserver to run app on local server
 * Django - The web framework used
 * Python -Programming Language
 * Meetup API
+* HTML/CSS/Bootstrap
+
 
 
 
