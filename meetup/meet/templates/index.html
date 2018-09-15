@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- <p>The upcoming event is {{name}} and it is on {{local_date}} at {{venue_name}}</p> -->
+{% for item in data.events %}
+<div class="p-2 mb-2 bg-light text-dark">
+<div class="card " style="width: 70%;">
+  <div class="card-body">
+    <p class="font-weight-bold">Event Name:{{item.name}}</p>
+    <hr class="my-5">
+    <p  display:inline-block;>Description:{{item.description}}</p>
+
+      <p  display:inline-block;>Date:{{item.local_date}}</p>
+
+        <p  display:inline-block;>Venue:{{item.venue.name}}</p>
+        <p  display:inline-block;>Actions:{{item.self.actions}}</p>
+        <a href="{{item.link}}"  ;>More Details</a>
+
+  </div>
+</div>
+</div>
+
+
+
+
+
+{% endfor %}
+{% endblock %}
