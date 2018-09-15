@@ -1,6 +1,6 @@
-# Personal Gallery Application
+# Meetup
 
-personal gallery application that you display your photos for others to see.
+An app that uses the Meetup API  to display the list of events happening in your city this week.
 
 
 
