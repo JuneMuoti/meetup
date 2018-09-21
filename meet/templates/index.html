@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- <p>The upcoming event is {{name}} and it is on {{local_date}} at {{venue_name}}</p> -->
+{% for item in data.events %}
+<!-- <div class="p-2 mb-2 bg-light text-dark">
+<div class="card " style="width: 70%;">
+  <div class="card-body">
+    <p class="font-weight-bold">Event Name:{{item.name}}</p>
+    <hr class="my-5">
+    <p  display:inline-block;>Description:{{item.description}}</p>
+
+      <p  display:inline-block;>Date:{{item.local_date}}</p>
+
+        <p  display:inline-block;>Venue:{{item.venue.name}}</p>
+        <p  display:inline-block;>Actions:{{item.self.actions}}</p>
+        <a href="{{item.link}}"  ;>More Details</a>
+
+
+  </div>
+</div>
+</div> -->
+
+
+<div class="container">
+
+  <div class="card-media">
+    <!-- media container -->
+    <div class="card-media-object-container">
+      <div class="card-media-object" style="background-image: url(https://static1.squarespace.com/static/57a1be572e69cf806ab12968/t/59fdf47b8e7b0f1f9f78c06c/1531147407690/meetup-logo-script-1200x630.png);"></div>
+
+
+    </div>
+    <!-- body container -->
+    <div class="card-media-body">
+      <div class="card-media-body-top">
+        <span class="subtle">{{item.local_date}}</span>
+
+      </div>
+      <span class="card-media-body-heading">{{item.name}}</span>
+      <img src="{{item.description_images}}">
+      <div class="card-media-body-supporting-bottom">
+        <span class="card-media-body-supporting-bottom-text subtle">{{item.venue.name}}</span>
+        <span class="card-media-body-supporting-bottom-text subtle u-float-right">Free</span>
+      </div>
+      <div class="card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal">
+        <span class="card-media-body-supporting-bottom-text subtle">{{item.category}}</span>
+        <a href="{{item.link}}" class="card-media-body-supporting-bottom-text card-media-link u-float-right">More Details</a>
+
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+
+
+{% endfor %}
+{% endblock %}
